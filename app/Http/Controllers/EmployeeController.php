@@ -20,6 +20,13 @@ class EmployeeController extends Controller
         return Response()->json($data,200);
     }
 
+    public function logout()
+    {
+        Session::flush();
+        $id = "Logout.";
+        return Response()->json($id,200);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

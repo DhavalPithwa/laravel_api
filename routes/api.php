@@ -22,3 +22,5 @@ Route::post('register' , 'EmployeeController@store');
 Route::post('login', 'EmployeeController@login');
 
 Route::get('show', 'EmployeeController@index');
+
+Route::get('logout', 'EmployeeController@logout');
